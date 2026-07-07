@@ -3,8 +3,8 @@
 my personal svelte starter template. clone it, nuke the git repo (create ur own), and go.
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm dev
 ```
 
 ### stuff is in here
