@@ -1,12 +1,21 @@
 <script>
     let count = $state(0);
+    const increment = () => count++;
+    const decrement = () => (count > 0 ? count-- : (count = 0));
 </script>
 
-<main class="flex flex-col items-center justify-center min-h-screen gap-2">
-    <h1 class="text-5xl">Hello, World!</h1>
-
-    <span class="mt-5 text-xl text-mist">Count: {count}</span>
-    <button class="button" onclick={() => count++}> Increment </button>
-</main>
-
-<style></style>
+<div class="hero bg-base-300 min-h-screen">
+    <div class="hero-content text-center">
+        <div class="max-w-md">
+            <p class="py-5 text-4xl">
+                Count = {count}
+            </p>
+            <button class="btn btn-accent btn-soft mx-2" onclick={decrement}>
+                -
+            </button>
+            <button class="btn btn-primary btn-soft mx-2" onclick={increment}>
+                +
+            </button>
+        </div>
+    </div>
+</div>
