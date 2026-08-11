@@ -6,7 +6,7 @@
     class="mx-auto max-w-xl rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-xl"
 >
     <div class="mb-8">
-        <p class="font-mono text-md text-center text-orange-400">
+        <p class="font-mono text-lg text-center text-orange-400 font-bold">
             REACTIVE COMPONENT EXAMPLE
         </p>
     </div>
@@ -17,7 +17,7 @@
         {count}
     </output>
 
-    <div class="mt-4 grid grid-cols-2 gap-3">
+    <div class="mt-4 flex justify-center items--center gap-3">
         <button
             class="rounded-lg bg-slate-800 px-4 py-3 font-medium transition hover:bg-slate-700 active:scale-[0.98]"
             onclick={() => count++}
