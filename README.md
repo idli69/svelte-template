@@ -82,8 +82,8 @@ http://localhost:5173/
 
 Open that URL in your browser(don't send it to yo friends though.).
 
-> !NOTE
-> Rest if you know how to use VITE you are good.
+> [!NOTE]
+> If you already know how to use Vite, you're good to go from here.
 
 ### 4. Start building
 
