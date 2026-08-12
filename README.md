@@ -1,4 +1,4 @@
-# Svelte 5 Template
+# Svelte 5 Template App
 
 A lightweight **Svelte 5 + Tailwind CSS v4** starter template powered by Vite.
 
