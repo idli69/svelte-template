@@ -2,34 +2,24 @@
     let count = $state(0);
 </script>
 
-<section
-    class="mx-auto max-w-xl rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-xl"
->
-    <div class="mb-8">
-        <p class="font-mono text-lg text-center text-orange-400 font-bold">
-            REACTIVE COMPONENT EXAMPLE
-        </p>
-    </div>
-
-    <output
-        class="block rounded-lg bg-slate-950 px-6 py-8 text-center font-mono text-4xl font-bold"
-    >
+<section class="mx-auto max-w-sm space-y-4 my-10">
+    <p class="text-center text-4xl font-bold">
         {count}
-    </output>
+    </p>
 
-    <div class="mt-4 flex justify-center items--center gap-3">
+    <div class="flex justify-center gap-2">
         <button
-            class="rounded-lg bg-slate-800 px-4 py-3 font-medium transition hover:bg-slate-700 active:scale-[0.98]"
-            onclick={() => count++}
+            class="rounded bg-slate-800 px-4 py-2 hover:bg-slate-700 transition-transform duration-150 active:scale-95"
+            onclick={() => count--}
         >
-            Increase
+            −
         </button>
 
         <button
-            class="rounded-lg bg-slate-800 px-4 py-3 font-medium transition hover:bg-slate-700 active:scale-[0.98]"
-            onclick={() => count--}
+            class="rounded bg-slate-800 px-4 py-2 hover:bg-slate-700 transition-transform duration-150 active:scale-95"
+            onclick={() => count++}
         >
-            Decrease
+            +
         </button>
     </div>
 </section>

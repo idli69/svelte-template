@@ -1,23 +1,44 @@
 <script>
     import Counter from "./lib/Counter.svelte";
+
+    let name = $state("");
 </script>
 
-<main class="min-h-screen bg-slate-950 text-slate-100">
-    <header class="mx-auto max-w-8xl px-6 py-12 sm:px-10 lg:px-16">
-        <h1
-            class="max-w-5xl font-mono text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-tight"
-        >
-            Hi, I'm Idli.
-        </h1>
+<main class="min-h-screen bg-slate-950 text-slate-100 flex">
+    <header class="mx-auto max-w-5xl px-5 py-25 sm:px-10 lg:px-15">
+        <div class="max-w-4xl">
+            <p class="font-mono text-sm font-bold text-orange-500">
+                SVELTE 5 + <span class="text-blue-400">TAILWIND 4</span>
+            </p>
 
-        <p
-            class="mt-8 max-w-2xl text-[clamp(1.1rem,2vw,1.5rem)] leading-relaxed text-slate-400"
-        >
-            A lightweight Svelte + Tailwind starter template for my projects.
-        </p>
+            <h1 class="mt-6 font-mono text-4xl font-bold tracking-tight">
+                Hi, I'm Idli.
+            </h1>
+
+            <p class="mt-8 max-w-2xl text-xl leading-relaxed text-slate-400">
+                A minimal starter template for my projects.
+            </p>
+        </div>
+
+        <section class="mt-16 max-w-md">
+            <label for="name" class="mb-2 block text-md text-slate-400">
+                Svelte 5 Reactivity
+            </label>
+
+            <Counter />
+
+            {#if name}
+                <p class="text-slate-400 text-center text-3xl my-4">
+                    Hello, <span class="text-slate-100">{name}</span> 👋
+                </p>
+            {/if}
+            <input
+                id="name"
+                class="w-full rounded-lg border border-slate-800 bg-slate-800 px-4 py-3 outline-none transition focus:border-orange-500"
+                type="text"
+                placeholder="Input your name..."
+                bind:value={name}
+            />
+        </section>
     </header>
-
-    <section class="mx-auto max-w-7xl px-6 pb-16 sm:px-10 lg:px-16">
-        <Counter />
-    </section>
 </main>
