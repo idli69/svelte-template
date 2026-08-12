@@ -14,6 +14,10 @@ This template is meant to be simple:
 | -------------------------------------- | ---------------------------------------- |
 | ![Dark theme](screenshots/dark_pc.png) | ![Light theme](screenshots/light_pc.png) |
 
+| Dark Theme (Mobile)                               | Light Theme (Mobile)                                |
+| ------------------------------------------------- | --------------------------------------------------- |
+| ![Dark theme Mobile](screenshots/dark_mobile.png) | ![Light theme Mobile](screenshots/light_mobile.png) |
+
 ## Tech Stack
 
 - [Svelte 5](https://svelte.dev/)
